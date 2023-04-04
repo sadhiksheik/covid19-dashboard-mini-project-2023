@@ -1,0 +1,112 @@
+.entire-about-container {
+  background-color: #161625;
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+}
+.about-container {
+  background-color: #161625;
+  min-height: 100vh;
+  margin-top: 0px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.about-loader-container {
+  align-self: center;
+}
+.about-para {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+}
+.about-update-para {
+  color: #94a3b8;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.about-ready-para {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #e2e8f0;
+}
+.about-ul-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+.faqs-li {
+  list-style-type: none;
+}
+.question {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #94a3b8;
+}
+.answer {
+  color: #007bff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-para {
+    color: #f8fafc;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .about-update-para {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #94a3b8;
+  }
+  .about-ready-para {
+    color: #e2e8f0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .question {
+    color: #94a3b8;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .answer {
+    color: #007bff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.load {
+  color: white;
+}

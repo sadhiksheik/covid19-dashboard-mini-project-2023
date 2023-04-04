@@ -1,0 +1,231 @@
+.entire-specific-container {
+  background-color: #161625;
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+}
+.specific-container {
+  background-color: #161625;
+  min-height: 100vh;
+  margin-top: 0px;
+  padding-top: 40px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-tested-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.tested-count-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+.tested-text {
+  color: #94a3b8;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: opx;
+}
+.tested-count {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #94a3b8;
+}
+.name-box {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 11px, 11px, 11px, 11px;
+  min-width: 312px;
+  max-width: 370px;
+  height: 64px;
+  background: rgba(2, 132, 199, 0.16);
+  border-radius: 32px;
+  align-items: center;
+  justify-content: center;
+}
+.state-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 48px;
+  color: #0ea5e9;
+}
+.date {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #cbd5e1;
+}
+.date-name-cont {
+  display: flex;
+  flex-direction: column;
+}
+.state-cards-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 1055px;
+  height: 232px;
+  margin-bottom: 20px;
+}
+.cont-but {
+  background-color: transparent;
+  border-width: 0px;
+}
+.state-confirmed-card {
+  width: 200px;
+  height: 232px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+.state-confirmed-color {
+  color: #ff073a;
+}
+.active-confirmed {
+  background-color: #331427;
+}
+.state-active-card {
+  color: #007bff;
+}
+.active-active {
+  background-color: #253647;
+}
+.state-recovered-card {
+  color: #28a745;
+}
+.recovered-active {
+  background-color: #122b17;
+}
+.state-image {
+  width: 38px;
+  height: 38px;
+}
+.state-deceased-card {
+  color: #6c757d;
+}
+.deceased-active {
+  background-color: #1d2730;
+}
+.state-count {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+.state-cards-mobile-cont {
+  display: none;
+}
+.top-dist-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+.dist-li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  width: 220px;
+  margin-right: 10px;
+}
+.dist-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #94a3b8;
+}
+.value {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #94a3b8;
+  margin-right: 10px;
+}
+.top-dist-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ff073a;
+}
+
+@media screen and (max-width: 768px) {
+  .state-cards-mobile-cont {
+    display: flex;
+    align-items: center;
+  }
+  .specific-container {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .name-tested-container {
+    margin-left: 0px;
+  }
+  .name-box {
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+  }
+  .state-name {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .tested-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tested-count {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .date {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .state-confirmed-card {
+    width: 148px;
+    height: 148px;
+    margin: 15px;
+  }
+  .state-cards-cont {
+    display: none;
+  }
+  .dist-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .value {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .top-dist-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

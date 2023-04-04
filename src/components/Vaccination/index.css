@@ -1,0 +1,19 @@
+.entire-vaccine-container {
+  background-color: #161625;
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+}
+.vaccine-container {
+  background-color: #161625;
+  min-height: 100vh;
+  margin-top: 0px;
+  padding-top: 0px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vaccine {
+  color: white;
+}
