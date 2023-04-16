@@ -463,7 +463,7 @@ class StateSpecifiedRoute extends Component {
           </button>
         </div>
 
-        {/* <div className="state-cards-mobile-cont">
+        <div className="state-cards-mobile-cont">
           <button
             type="button"
             className="cont-but"
@@ -538,7 +538,7 @@ class StateSpecifiedRoute extends Component {
               <p className="state-count">{totalList[0].deceased}</p>
             </div>
           </button>
-        </div> */}
+        </div>
 
         <h1 className="top-dist-heading">Top Districts</h1>
         <ul testid="topDistrictsUnorderedList" className="top-dist-ul">

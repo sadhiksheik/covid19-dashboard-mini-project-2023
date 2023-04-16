@@ -260,7 +260,7 @@ class Home extends Component {
   onAscendingOrder = () => {
     const {statesData} = this.state
     const sortedList = statesData.sort((a, b) =>
-      a.stateCode.localeCompare(b.stateCode),
+      b.stateCode.localeCompare(a.stateCode),
     )
     this.setState({statesData: sortedList})
   }
@@ -269,17 +269,17 @@ class Home extends Component {
     const {statesData} = this.state
     console.log(statesData)
     const sortedList = statesData.sort((a, b) =>
-      b.stateCode.localeCompare(a.stateCode),
+      a.stateCode.localeCompare(b.stateCode),
     )
     this.setState({statesData: sortedList})
   }
 
-  //   getCountryWideData = factor => {
-  //     const finalConfirmed = factor.reduce(
-  //       (accumulator, currentValue) => accumulator + currentValue,
-  //     )
-  //     return finalConfirmed
-  //   }
+  getCountryWideData = factor => {
+    const finalConfirmed = factor.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+    )
+    return finalConfirmed
+  }
 
   getHomeSuccessView = () => {
     const {searchInput, statesData} = this.state
@@ -287,15 +287,15 @@ class Home extends Component {
       each => each.stateCode !== 'TT',
     )
 
-    // const confirmedArray = statesData.map(eachState => eachState.confirmed)
-    // const confirmed = this.getCountryWideData(confirmedArray)
-    // const activeArray = statesData.map(eachState => eachState.active)
-    // const active = this.getCountryWideData(activeArray)
-    // const recoverArray = statesData.map(eachState => eachState.recovered)
-    // const recovered = this.getCountryWideData(recoverArray)
-    // const deceasedArray = statesData.map(eachState => eachState.deceased)
-    // const deceased = this.getCountryWideData(deceasedArray)
-    // console.log(active)
+    const confirmedArray = statesData.map(eachState => eachState.confirmed)
+    const confirmed = this.getCountryWideData(confirmedArray)
+    const activeArray = statesData.map(eachState => eachState.active)
+    const active = this.getCountryWideData(activeArray)
+    const recoverArray = statesData.map(eachState => eachState.recovered)
+    const recovered = this.getCountryWideData(recoverArray)
+    const deceasedArray = statesData.map(eachState => eachState.deceased)
+    const deceased = this.getCountryWideData(deceasedArray)
+    console.log(active)
 
     return (
       <>
@@ -326,7 +326,7 @@ class Home extends Component {
               alt="country wide confirmed cases pic"
               src="https://res.cloudinary.com/dyal335uz/image/upload/v1679996912/check-mark_1_zjb32i.svg"
             />
-            <p className="home-count">34285612</p>
+            <p className="home-count">{confirmed}</p>
           </div>
           <div className="home-active-card" testid="countryWideActiveCases">
             <p className="home-confirmed">Active</p>
@@ -335,7 +335,7 @@ class Home extends Component {
               alt="country wide active cases pic"
               src="https://res.cloudinary.com/dyal335uz/image/upload/v1679997218/protection_2_t1dqu1.png"
             />
-            <p className="home-count">165803</p>
+            <p className="home-count">{active}</p>
           </div>
           <div
             className="home-recovered-card"
@@ -347,7 +347,7 @@ class Home extends Component {
               alt="country wide recovered cases pic"
               src="https://res.cloudinary.com/dyal335uz/image/upload/v1679997447/recovered_1_lvrlkt.svg"
             />
-            <p className="home-count">33661339</p>
+            <p className="home-count">{recovered}</p>
           </div>
           <div className="home-deceased-card" testid="countryWideDeceasedCases">
             <p className="home-confirmed">Deceased</p>
@@ -356,11 +356,11 @@ class Home extends Component {
               alt="country wide deceased  cases pic"
               src="https://res.cloudinary.com/dyal335uz/image/upload/v1679997518/breathing_1_uhqfex.svg"
             />
-            <p className="home-count">458470</p>
+            <p className="home-count">{deceased}</p>
           </div>
         </div>
 
-        {/* <div className="home-cards-mobile-container">
+        <div className="home-cards-mobile-container">
           <div className="mobile-sub-container">
             <div
               className="home-confirmed-card"
@@ -410,7 +410,7 @@ class Home extends Component {
               <p className="home-count">458470</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div testid="stateWiseCovidDataTable">
           <ul className="state-data-table-ul">
